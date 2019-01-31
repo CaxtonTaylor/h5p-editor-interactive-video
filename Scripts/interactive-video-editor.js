@@ -330,7 +330,7 @@ H5PEditor.widgets.interactiveVideo = H5PEditor.InteractiveVideo = (function ($) 
     this.IV.on('bookmarkAdded', that.bookmarkAdded, that);
     this.IV.on('endscreenAdded', that.endscreenAdded, that);
     this.IV.on('dnbEditorReady', that.resizeTooltips, that);
-    this.IV.attach(this.$editor);
+    this.IV.attachEditor(this.$editor);
 
     // Create a focus handler
     this.$focusHandler = $('<div>', {
